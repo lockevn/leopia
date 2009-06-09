@@ -1,4 +1,5 @@
 #summary Danh sách các nhà tài trợ, giúp đỡ cho dự án viketoan
+#labels Featured
 
 = Tinh thần =
    * danhut hỗ trợ ca nhạc, đàn đóm giải stress, động viên tinh thần
