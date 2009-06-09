@@ -1,4 +1,5 @@
 #summary Bàn bạc về kỹ thuật thực hiện
+#labels Phase-Design,Phase-Implementation
 
 = Giới thiệu =
 
