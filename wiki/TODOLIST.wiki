@@ -1,4 +1,5 @@
 #summary Các công việc cần làm.
+#labels Featured,Phase-Requirements
 
 = Những việc cần làm hiện tại =
 
