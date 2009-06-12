@@ -1,5 +1,6 @@
-<?php require_once($_SERVER['DOCUMENT_ROOT']."/gurucore/config.php");
+<?php require_once("./config.php");
 session_start();
+
 
 require_once(ABSPATH."Lib/External/Savant3.php");
 require_once(ABSPATH."Lib/HttpNavigation.php");
@@ -7,12 +8,9 @@ require_once(ABSPATH."Lib/URLParamHelper.php");
 
 require_once(ABSPATH."Page/PageBuilder.php");
 
-
 //********************* Set some ENVIRONMENT VAR for client side render **********************//
-
-
 $mod = GetParamSafe('mod');
-$mod = empty($mod) ? 'dashboard' : $mod;
+$mod = empty($mod) ? 'home' : $mod;
 $tab = GetParamSafe('tab');
 
 $tpl->assign('mod', $mod);
@@ -40,7 +38,7 @@ $arrayNotAllowGuest = array(
 
 if(in_array($mod, $arrayNotAllowGuest))
 {
-	$authkey = Security::GetCurrentAUauthkey(true);
+	// $authkey = Security::GetCurrentAUauthkey(true);
 }
 else
 {
@@ -58,7 +56,7 @@ else
 {
 	if(in_array($mod, $arrayNotAllowGuest))
 	{
-		Security::Logout('/login');
+		// Security::Logout('/login');
 	}
 	else
 	{
@@ -87,14 +85,14 @@ if($rendertype === "Pagelet")
 	$tpl->assign('ZONE', $zonecontent);
 	
 	// if customlayout is allow, use it.
-	$customlayout = in_array($customlayout, array_values(PageBuilder::$PageLayoutMap), true) ? $customlayout : 'raw_empty_for_pagelet';
+	$customlayout = in_array($customlayout, array_values(PageConfig::$PageLayoutMap), true) ? $customlayout : 'raw_empty_for_pagelet';
 	$tpl->display("LAYOUT.$customlayout.tpl.php");    
 }
 else
-{        
+{		
 	// not single pagelet render, we continue with PAGE RENDER
 	//********************* PAGE RENDER **********************//
-	if(in_array($mod, PageBuilder::$AllowedCustomModule))
+	if(in_array($mod, PageConfig::$AllowedCustomModule))
 	{
 		// if use "manual setting" Page
 		require_once(ABSPATH."Page/$mod.php");
@@ -102,29 +100,31 @@ else
 	else
 	{
 		// render page by render each pagelet, then add to page
-		if(array_key_exists($mod, PageBuilder::$PageMap))
+		if(array_key_exists($mod, PageConfig::$PageMap))
 		{
 			PageBuilder::Render($mod, $tpl);
 		}
 		else
 		{
 			// if page is not configured, echo not found
-			// HttpNavigation::OutputRedirectToBrowser('/pagenotfound.php');
-			HttpNavigation::OutputRedirectToBrowser('/index.php');
+			HttpNavigation::OutputRedirectToBrowser('/pagenotfound.php');
 		}
 	}
 
+
 	/************ EVERY PAGE HAS HEADER AND FOOTER, So render it manually here to avoid configure Header and Footer in each PageConfig ****************/
 	require_once(ABSPATH."Pagelet/header.php");
+
 	$tpl->assign('ZONE_TopBar', ${PageBuilder::PAGELET_PREFIX.'header'});
 	require_once(ABSPATH."Pagelet/footer.php");
 	$tpl->assign('ZONE_Footer', ${PageBuilder::PAGELET_PREFIX.'footer'});
 
+
 	// if page use customlayout
-	if(array_key_exists($mod, PageBuilder::$PageLayoutMap))
+	if(array_key_exists($mod, PageConfig::$PageLayoutMap))
 	{
 		// use custom layout define in PageBuilder    
-		$customlayout = PageBuilder::$PageLayoutMap[$mod];
+		$customlayout = PageConfig::$PageLayoutMap[$mod];
 		$tpl->display("LAYOUT.$customlayout.tpl.php");
 	}
 	else
