@@ -114,10 +114,9 @@ else
 
 	/************ EVERY PAGE HAS HEADER AND FOOTER, So render it manually here to avoid configure Header and Footer in each PageConfig ****************/
 	require_once(ABSPATH."Pagelet/header.php");
-
-	$tpl->assign('ZONE_TopBar', ${PageBuilder::PAGELET_PREFIX.'header'});
+	$tpl->assign('ZONE_TopBar', ${PageBuilder::PAGELET_PREFIX.'Pagelet/header'});
 	require_once(ABSPATH."Pagelet/footer.php");
-	$tpl->assign('ZONE_Footer', ${PageBuilder::PAGELET_PREFIX.'footer'});
+	$tpl->assign('ZONE_Footer', ${PageBuilder::PAGELET_PREFIX.'Pagelet/footer'});
 
 
 	// if page use customlayout

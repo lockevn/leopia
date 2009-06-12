@@ -1,12 +1,9 @@
-<?php require_once($_SERVER['DOCUMENT_ROOT']."/config.php");
-
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="expires" content="0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Smartcom.vn - hoc tieng Anh truc tuyen hieu qua, lop hoc tieng Anh, luyen thi, tieng Anh</title>
+<title>GURUCORE.com - information and communication technology, online service, hi tech, software design, web</title>
 
 <!-- Framework CSS -->
 <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection">
@@ -31,7 +28,7 @@ var PAGE = {AUpu : '<?= $this->AUpu ?>', AUpid : <?= (empty($this->AUpid) ? 0 : 
 	</div>
 	<hr />
 	<div id="logobar" class="span-24 aqua last">
-		<div class="span-5"><a href="/dashboard"><img src="http://smartlms.dyndns.org:8080/image/logo.jpg" alt="SmartCom Logo" /></a></div>
+		<div class="span-5"><a href="/dashboard"><img src="/image/logo.jpg" alt="Logo" /></a></div>
 		<div class="span-19 last"><?php echo $this->ZONE_Top ?></div>
 	</div>
 	<hr />
