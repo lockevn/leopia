@@ -1,5 +1,4 @@
-<?php //require_once($_SERVER['DOCUMENT_ROOT']."/config.php");
-
+<?php 
 
 /**
 * @desc return the parameter value, with mysql_espace. Avoid SQL Injection.

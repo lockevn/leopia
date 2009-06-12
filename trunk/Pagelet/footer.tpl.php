@@ -1,6 +1,6 @@
-<?php require_once($_SERVER['DOCUMENT_ROOT']."/config.php");
-
+<?php 
 ?>
+
 <div id="footer">
 <ul>
 	<li class="first"><a href="http://gurucore.com">Đội phát triển</a></li>	
