@@ -1,4 +1,5 @@
-<?php require_once("./config.php");
+<?php require_once("config.php");
+
 session_start();
 
 
@@ -107,7 +108,7 @@ else
 		else
 		{
 			// if page is not configured, echo not found
-			HttpNavigation::OutputRedirectToBrowser('/pagenotfound.php');
+			HttpNavigation::OutputRedirectToBrowser('/pagenotfound.php');			
 		}
 	}
 
