@@ -1,6 +1,8 @@
 <?php 
+=======
+<?php 
 ?>
-
+<object id="pingboxir42mxp5c8wɗ0" type="application/x-shockwave-flash" data="http://wgweb.msg.yahoo.com/badge/Pingbox.swf" width="240" height="420"><param name="movie" value="http://wgweb.msg.yahoo.com/badge/Pingbox.swf" /><param name="allowScriptAccess" value="always" /><param name="flashvars" value="wid=TnQWdsq3TGF7PUF1Qw2zhWA-" /></object>
 <div id="footer">
 <ul>
 	<li class="first"><a href="http://gurucore.com">Team</a></li>	
