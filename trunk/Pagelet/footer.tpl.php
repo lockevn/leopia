@@ -1,12 +1,9 @@
-<?php 
-?>
-<object id="pingboxir42mxp5c8wɗ0" type="application/x-shockwave-flash" data="http://wgweb.msg.yahoo.com/badge/Pingbox.swf" width="240" height="420"><param name="movie" value="http://wgweb.msg.yahoo.com/badge/Pingbox.swf" /><param name="allowScriptAccess" value="always" /><param name="flashvars" value="wid=TnQWdsq3TGF7PUF1Qw2zhWA-" /></object>
 <div id="footer">
 <ul>
 	<li class="first"><a href="http://gurucore.com">Team</a></li>	
-	<li><a href="http://groups.google.com/group/smartcomvn">Mailing list</a></li>
-	<li><a href="http://smartcom.vn/faq">FAQ</a></li>	
-	<li class=""><a href="http://smartcom.vn/feedback">Contact</a></li>
+	<li><a href="http://groups.google.com/group/leopia">Mailing list</a></li>
+	<li><a href="http://gurucore.com/faq">FAQ</a></li>	
+	<li class=""><a href="http://gurucore.com/feedback">Contact</a></li>
 </ul>
 <p class="copyright">GURUCORE Inc 2009, power by <a href="http://leopia.googlecode.com" ref="powerby">Leopia</a></p>
 </div>

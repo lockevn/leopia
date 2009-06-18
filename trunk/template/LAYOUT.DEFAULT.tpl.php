@@ -35,17 +35,17 @@ var PAGE = {AUpu : '<?= $this->AUpu ?>', AUpid : <?= (empty($this->AUpid) ? 0 : 
 	<div id="SuperTopBanner" class="span-24 last">
 		<?php echo $this->ZONE_TopInfo ?>
 	</div>
-	<div class="span-5" id="leftsidebar">
+	<div class="span-4 yellow" id="leftsidebar">
 		<?php echo $this->ZONE_Left ?>
 		&nbsp;
 	</div>
 
-	<div class="span-15" id="content">
+	<div class="span-14" id="content">
 		<?php echo $this->ZONE_MainContent ?>
 		&nbsp;
 	</div>
 
-	<div class="span-4 last" id="rightsidebar">
+	<div class="span-6 last blue" id="rightsidebar">
 		<?php echo $this->ZONE_Right ?>        
 	</div>
 	<div id="bottom" class="span-24 green last">
