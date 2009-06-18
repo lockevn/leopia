@@ -8,11 +8,11 @@ class PageConfig
 	*/
 	public static $PageMap = array(
 		'home' => array(
-			'ZONE_MainContent' => array('', '',''),                
+			'ZONE_MainContent' => array('', '',''),
 			'ZONE_Right' => array('ModuleCommon/yahoo_pingbox', 'ModuleCommon/mashup1')
 		),        
 		'contact' => array(
-			'ZONE_MainContent' => array('', '',''),                
+			'ZONE_MainContent' => array('', '',''),
 			'ZONE_Right' => array('', '')
 		)
 	);

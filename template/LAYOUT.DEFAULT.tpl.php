@@ -4,6 +4,9 @@
 <meta http-equiv="expires" content="0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>GURUCORE.com - information and communication technology, online service, hi tech, software design, web</title>
+<meta name="robots" content="index,follow" /> 
+<meta name="description" content="Nhóm nghiên cứu công nghệ thông tin và truyền thông GURUCORE, cung cấp các dịch vụ tư vấn, R&D và thiết kế phần mềm, đặc biệt là các hệ thống web online có công suất cao" /> 
+<meta name="keywords" content="GURUCORE, guru core, guru, web framework, framework, dịch vụ tư vấn, dich vu tu van, tư vấn, tu van, thiết kế phần mềm, thiet ke phan mem, thiết kế, thiet ke, dịch vụ web, dich vu web, dịch vụ, dich vu, Google, Yahoo, Microsoft, WordPress, Webmaster, Việt Nam, Vietnam, Viet Nam, Blog, Website" /> 
 
 <!-- Framework CSS -->
 <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection">
@@ -40,12 +43,12 @@ var PAGE = {AUpu : '<?= $this->AUpu ?>', AUpid : <?= (empty($this->AUpid) ? 0 : 
 		&nbsp;
 	</div>
 
-	<div class="span-14" id="content">
+	<div class="span-16" id="content">
 		<?php echo $this->ZONE_MainContent ?>
 		&nbsp;
 	</div>
 
-	<div class="span-6 last blue" id="rightsidebar">
+	<div class="span-4 last blue hide" id="rightsidebar">
 		<?php echo $this->ZONE_Right ?>        
 	</div>
 	<div id="bottom" class="span-24 green last">
@@ -63,7 +66,8 @@ var PAGE = {AUpu : '<?= $this->AUpu ?>', AUpid : <?= (empty($this->AUpid) ? 0 : 
 <!-- prettyPhoto -->
 
 <script language="javascript">
-$(document).ready(function(){	
+$(document).ready(function(){
+	$('#rightsidebar').fadeIn(3000);
 });
 </script>
 </body>
