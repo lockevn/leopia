@@ -1,9 +1,9 @@
 <div id="footer">
 <ul>
-	<li class="first"><a href="http://gurucore.com">Team</a></li>	
+	<li class="first"><a href="http://messio.gurucore.com/credit">Team</a></li>	
 	<li><a href="http://groups.google.com/group/leopia">Mailing list</a></li>
-	<li><a href="http://gurucore.com/faq">FAQ</a></li>	
-	<li class=""><a href="http://gurucore.com/feedback">Contact</a></li>
+	<li><a href="http://messio.gurucore.com/faq">FAQ</a></li>	
+	<li class=""><a href="#">Contact</a></li>
 </ul>
 <p class="copyright">GURUCORE Inc 2009, power by <a href="http://leopia.googlecode.com" ref="powerby">Leopia</a></p>
 </div>
