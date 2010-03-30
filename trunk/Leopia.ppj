@@ -3,15 +3,15 @@ RelativeRootDir=..\trunk
 URL=
 MappingRemoteDir=
 PublishRemoteDir=/
-DriverID=FTP:Gurucore@godaddy
+DriverID=FTP:gurucore@godaddy
 SourceControl=0
-DontPublishDirs=CVS;.svn
+DontPublishDirs=CVS;.svn;*.ppj;*.ppx
 DefaultFile=
 HideFiles=*.ppj;*.ppx
 HideDirs=CVS;.svn
 EncoderEnabled=0
 MappingRemote0=
-MappingLocal0=D:\eclipse_workspace\Leopia\trunk
+MappingLocal0=D:\LockeVN\Leopia\trunk
 MappingURL0=
 MappingPublishing0=/
 MappingCount=1
@@ -26,7 +26,7 @@ CvsHost=
 CvsRoot=
 CvsModule=
 CvsUser=
-CvsPassw=9A8so8XaQ1CR1i/snRJbyOmOx+R0SnJAS0Zf3E2Ci7iN/vcrJLqjMPG2j8z98ruoSW4nxNkq0yClJr+8rWLrmA==
+CvsPassw=K3ZrB9g5Hpf0xdpDUJHWL+ydElvI6Y7H5HVKc+BXa1bcTYKLuJn+99QluqMw8baPzP3yu6hJbifE1SrTIKEmvw==
 CvsUseUtf8=0
 CvsCVSROOT=:pserver:@
 IncPath_count=0
